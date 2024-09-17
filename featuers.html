@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Arabic' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="logo.icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>شركة محمد المطرودي القابضة - ما يميزنا</title>
+
+    <style>
+      body {
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+        background-color: white;
+      }
+
+      /* Navigation style */
+      .custom-nav .nav-link {
+        color: darkblue;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .custom-nav .nav-link:hover {
+        color: red;
+      }
+
+      .custom-nav .nav-link img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      /* Footer style */
+      .footer {
+        background-color: #002147;
+        padding: 15px 0;
+        color: white;
+      }
+
+      .footer p {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      /* Grid and card styles */
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+      }
+
+      .card {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.3s ease;
+      }
+
+      .card-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.9);
+        color: black;
+        padding: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        overflow-y: auto;
+        max-height: 100%;
+      }
+
+      .card-content h4 {
+        margin-top: 0;
+      }
+
+      .card.active .card-content {
+        opacity: 1;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      /* Media queries for responsiveness */
+      @media (max-width: 768px) {
+        .card-content {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <div class="container">
+      <nav class="nav justify-content-center custom-nav">
+        <a class="nav-link" href="address.html"><b>موقعنا</b></a>
+        <a class="nav-link" href="chairman.html"><b>كلمة الرئيس</b></a>
+        <a class="nav-link" href="about-us.html"><b>من نحن</b></a>
+        <a class="nav-link" href="policy.html"><b>سياستنا</b></a>
+        <a class="nav-link" href="ourprojects.html"><b>مشاريعنا</b></a>
+        <a class="nav-link" href="featuers.html"><b>ما يميزنا</b></a>
+        <a class="nav-link" href="services.html"><b>خدماتنا</b></a>
+        <a class="nav-link" href="team.html"><b>فريقنا</b></a>
+        <a class="nav-link" href="index.html"><b>الرئيسية</b></a>
+        <a class="nav-link active" aria-current="page" href="#">
+          <img src="C:/Users/tariq/Desktop/matr/img/logom.png" alt="Logo" width="45" height="35">
+        </a>
+      </nav>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container text-center mt-5" id="features">
+      <h1>ما يميزنا</h1>
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card" onclick="toggleContent(this)">
+          <img src="C:/Users/tariq/Desktop/matr/img/ou1.png" alt="الجودة العالية">
+          <div class="card-content">
+            <h4>الجودة العالية</h4>
+            <p>نتفرد في تصميم وتنفيذ مشاريع المقاولات بجودة وكفاءة.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card" onclick="toggleContent(this)">
+          <img src="C:/Users/tariq/Desktop/matr/img/ou2.png" alt="الخبرة الطويلة">
+          <div class="card-content">
+            <h4>الخبرة الطويلة</h4>
+            <p>نتميز بخبرة طويلة في مجال مقاولات البناء والإنشاءات.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card" onclick="toggleContent(this)">
+          <img src="C:/Users/tariq/Desktop/matr/img/ou3.png" alt="فريق عمل احترافي">
+          <div class="card-content">
+            <h4>فريق عمل احترافي</h4>
+            <p>لدينا فريق من الخبراء في مختلف التخصصات الهندسية.</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card" onclick="toggleContent(this)">
+          <img src="C:/Users/tariq/Desktop/matr/img/ou4.png" alt="التواصل المستمر">
+          <div class="card-content">
+            <h4>التواصل المستمر</h4>
+            <p>نتواصل باستمرار مع عملائنا أثناء تنفيذ المشروع وحتى الانتهاء.</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card" onclick="toggleContent(this)">
+          <img src="C:/Users/tariq/Desktop/matr/img/ou5.png" alt="الجاهزية">
+          <div class="card-content">
+            <h4>الجاهزية</h4>
+            <p>نمتلك المعدات والأدوات اللازمة لتنفيذ كل أعمال المقاولات.</p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card" onclick="toggleContent(this)">
+          <img src="C:/Users/tariq/Desktop/matr/img/ou6.png" alt="متابعة ما بعد البيع">
+          <div class="card-content">
+            <h4>متابعة ما بعد البيع</h4>
+            <p>نتابع مع عملائنا بعد تنفيذ المشروع لضمان تلبية احتياجاتهم.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-primary text-light footer text-center mt-5">
+      <p>جميع الحقوق محفوظة لشركة محمد المطرودي القابضة 2024 &copy; السجل التجاري: 1010820502 | الرقم الضريبي: 310219722800003</p>
+    </div>
+
+    <script>
+      function toggleContent(card) {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(c => {
+          if (c !== card) {
+            c.classList.remove('active');
+          }
+        });
+        card.classList.toggle('active');
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

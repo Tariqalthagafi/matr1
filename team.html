@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Arabic' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="logo.icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>شركة محمد المطرودي القابضة - فريقنا</title>
+
+
+    <style>
+        /* Style for navigation only */
+        .custom-nav .nav-link {
+          color: darkblue;
+          font-weight: bold;
+          transition: color 0.3s ease;
+        }
+    
+        .custom-nav .nav-link:hover {
+          color: red;
+        }
+    
+        .custom-nav .nav-link img {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      </style>
+
+    <!-- Team Section Styles -->
+    <style>
+      .team-item {
+        cursor: pointer;
+        position: relative;
+        border: none; /* Hide the card borders */
+      }
+      .team-item.selected::after {
+        content: '';
+        display: block;
+        width: 60%; /* Smaller than the card width */
+        height: 4px; /* Thicker underline */
+        background-color: red;
+        margin: 10px auto 0; /* Center the line under the card */
+        padding-top: 5px; /* Add some padding */
+      }
+      .team-details {
+        display: none;
+      }
+      .team-details.active {
+        display: block;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <div class="container">
+      <nav class="nav justify-content-center custom-nav">
+        <a class="nav-link" href="address.html"><b>موقعنا</b></a>
+        <a class="nav-link" href="chairman.html"><b>كلمة الرئيس</b></a>
+        <a class="nav-link" href="about-us.html"><b>من نحن</b></a>
+        <a class="nav-link" href="policy.html"><b>سياستنا</b></a>
+        <a class="nav-link" href="ourprojects.html"><b>مشاريعنا</b></a>
+        <a class="nav-link" href="featuers.html"><b>ما يميزنا</b></a>
+        <a class="nav-link" href="services.html"><b>خدماتنا</b></a>
+        <a class="nav-link" href="team.html"><b>فريقنا</b></a>
+        <a class="nav-link" href="index.html"><b>الرئيسية</b></a>
+        <a class="nav-link active" aria-current="page" href="#">
+          <img src="C:/Users/tariq/Desktop/matr/img/logom.png" alt="Logo" width="45" height="35">
+        </a>
+      </nav>
+    </div>
+
+    <!-- Team Section -->
+    <div class="container-xxl py-5" id="team">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="mb-5">فريقنا</h1>
+        </div>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item card selected" id="card1" onclick="selectCard('card1', 'member1')">
+              <img src="C:/Users/tariq/Desktop/matr/img/11.png" alt="Team Member" class="card-img-top">
+              <div class="team-text card-body"></div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item card" id="card2" onclick="selectCard('card2', 'member2')">
+              <img src="C:/Users/tariq/Desktop/matr/img/12.png" alt="Team Member" class="card-img-top">
+              <div class="team-text card-body"></div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item card" id="card3" onclick="selectCard('card3', 'member3')">
+              <img src="C:/Users/tariq/Desktop/matr/img/12.png" alt="Team Member" class="card-img-top">
+              <div class="team-text card-body"></div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item card" id="card4" onclick="selectCard('card4', 'member4')">
+              <img src="C:/Users/tariq/Desktop/matr/img/13.png" alt="Team Member" class="card-img-top">
+              <div class="team-text card-body"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Section that appears when a card is clicked -->
+      <div class="container mt-5 text-center">
+        <div id="member1" class="team-details active">
+          <h3>نائب رئيس مجلس الادارة والمدير التنفيذي</h3>
+          <p>محمد المطرودي</p>
+        </div>
+        <div id="member2" class="team-details">
+          <h3>رئيس مجلس الادارة</h3>
+          <p>عبدالكريم المطرودي</p>
+        </div>
+        <div id="member3" class="team-details">
+          <h3>عضو مجلس ادارة ومدير موقع زرعة</h3>
+          <p>عفاف البدران</p>
+        </div>
+        <div id="member4" class="team-details">
+          <h3>عضو مجلس ادارة ومدير التشغيل</h3>
+          <p>ابراهيم المطرودي</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-primary text-light footer text-center mt-5">
+      <p>جميع الحقوق محفوظة لشركة محمد المطرودي القابضة 2024 &copy; السجل التجاري: 1010820502 | الرقم الضريبي: 310219722800003</p>
+    </div>
+
+    <!-- JavaScript for Card Selection -->
+    <script>
+      function selectCard(cardId, memberId) {
+        // Remove 'selected' class from all cards
+        document.querySelectorAll('.team-item').forEach(function(card) {
+          card.classList.remove('selected');
+        });
+
+        // Hide all member details
+        document.querySelectorAll('.team-details').forEach(function(details) {
+          details.classList.remove('active');
+        });
+
+        // Add 'selected' class to the clicked card
+        document.getElementById(cardId).classList.add('selected');
+
+        // Show the corresponding team member details
+        document.getElementById(memberId).classList.add('active');
+      }
+    </script>
+    
+  </body>
+</html>
