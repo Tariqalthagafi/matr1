@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ar">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Arabic' rel='stylesheet'>
@@ -10,107 +10,109 @@
     <title>شركة محمد المطرودي القابضة - خدماتنا</title>
 
     <style>
-        .body{        font-family: 'IBM Plex Sans Arabic', sans-serif;
-    }
-      /* Navigation style */
-      .custom-nav .nav-link {
-        color: darkblue;
-        font-weight: bold;
-        transition: color 0.3s ease;
-        font-family: 'IBM Plex Sans Arabic', sans-serif;
-
-      }
-
-      .custom-nav .nav-link:hover {
-        color: red;
-      }
-
-      .custom-nav .nav-link img {
-        display: inline-block;
-        vertical-align: middle;
-      }
-
-      /* Footer style */
-      .footer {
-        background-color: #002147;
-        padding: 15px 0;
-        color: white;
-      }
-
-      .footer p {
-        margin: 0;
-        font-size: 14px;
-      }
+        body {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+        }
+        .custom-nav .nav-link {
+            color: darkblue;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .custom-nav .nav-link:hover {
+            color: red;
+        }
+        .footer {
+            background-color: darkblue;
+            color: white;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Navigation -->
     <div class="container">
-      <nav class="nav justify-content-center custom-nav">
-        <a class="nav-link" href="address.html"><b>موقعنا</b></a>
-        <a class="nav-link" href="chairman.html"><b>كلمة الرئيس</b></a>
-        <a class="nav-link" href="about-us.html"><b>من نحن</b></a>
-        <a class="nav-link" href="policy.html"><b>سياستنا</b></a>
-        <a class="nav-link" href="ourprojects.html"><b>مشاريعنا</b></a>
-        <a class="nav-link" href="featuers.html"><b>ما يميزنا</b></a>
-        <a class="nav-link" href="services.html"><b>خدماتنا</b></a>
-        <a class="nav-link" href="team.html"><b>فريقنا</b></a>
-        <a class="nav-link" href="index.html"><b>الرئيسية</b></a>
-        <a class="nav-link active" aria-current="page" href="#">
-          <img src="logom.png" alt="Logo" width="45" height="35">
-        </a>
-      </nav>
+        <nav class="nav justify-content-center custom-nav">
+            <a class="nav-link" href="address.html"><b>موقعنا</b></a>
+            <a class="nav-link" href="chairman.html"><b>كلمة الرئيس</b></a>
+            <a class="nav-link" href="about-us.html"><b>من نحن</b></a>
+            <a class="nav-link" href="policy.html"><b>سياستنا</b></a>
+            <a class="nav-link" href="ourprojects.html"><b>مشاريعنا</b></a>
+            <a class="nav-link" href="featuers.html"><b>ما يميزنا</b></a>
+            <a class="nav-link" href="services.html"><b>خدماتنا</b></a>
+            <a class="nav-link" href="team.html"><b>فريقنا</b></a>
+            <a class="nav-link" href="index.html"><b>الرئيسية</b></a>
+            <a class="nav-link active" aria-current="page" href="#">
+                <img src="logom.png" alt="Logo" width="45" height="35">
+            </a>
+        </nav>
     </div>
 
     <!-- Services Section -->
-    <div class="container text-center" id="services">
-      <h1>خدماتنا</h1>
-      <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
+    <div class="container text-center py-5" id="services">
+        <h1 style="font-weight: bold; color: darkblue;">خدماتنا</h1>
+        <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="h3.png" alt="Service 1" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>انشاء الهياكل المعدنية</h2>
+                        <p>نصمم الهياكل المعدنية ونركب المكونات بما يضمن هيكل معدني عالي الجودة بالاعتماد على مراحل متتالية.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="h4.png" alt="Service 2" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>الصيانة والنظافة</h2>
+                        <p>نوفر خدمات صيانة المباني والمنشآت ونظافة المواقع والمنازل.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="h2.png" alt="Service 3" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>التشطيبات</h2>
+                        <p>نقدم خدمات تشطيبات متكاملة لتنفيذ اعمال السباكة والكهرباء والديكورات.</p>
+                    </div>
+                </div>
+                <!-- New Slide 1 -->
+                <div class="carousel-item">
+                    <img src="h5.png" alt="Service 4" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2> تسليم مفتاح</h2>
+                        <p>نتكفل بتخطيط وتصميم وتنفيذ المشاريع المعمارية على أتم وجه وتسليمها في التوقيت المناسب واجراء ما يلزم لتكون متاحة للاستخدام فور تسليمها</p>
+                    </div>
+                </div>
+                <!-- New Slide 2 -->
+                <div class="carousel-item">
+                    <img src="h1.png" alt="Service 5" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>تنفيذ الهياكل الخرسانية  </h2>
+                        <p>نستغل خبرتنا الطويله لتنفيذ الهياكل الخرسانية وفقا للمعايير المعمارية وبجودة وكفاءة عالية من مراحل تصميم المباني الخرسانية والحفر والتسليح الى الصب </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">السابق</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">التالي</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="h1.png" alt="Service 1" class="d-block w-100">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>انشاء الهياكل المعدنية</h5>
-              <p>نصمم الهياكل المعدنية ونركب المكونات بما يضمن هيكل معدني عالي الجودة بالاعتماد على مراحل متتالية.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="h2.png" alt="Service 2" class="d-block w-100">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>الصيانة والنظافة</h5>
-              <p>نوفر خدمات صيانة المباني والمنشآت ونظافة المواقع والمنازل.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="h3.png" alt="Service 3" class="d-block w-100">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>التشطيبات</h5>
-              <p>نقدم خدمات تشطيبات متكاملة لتنفيذ اعمال السباكة والكهرباء والديكورات.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">السابق</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">التالي</span>
-        </button>
-      </div>
     </div>
 
     <!-- Footer -->
-    <div class="container-fluid bg-primary text-light footer text-center mt-5">
-      <p>جميع الحقوق محفوظة لشركة محمد المطرودي القابضة 2024 &copy; السجل التجاري: 1010820502 | الرقم الضريبي: 310219722800003</p>
+    <div class="container-fluid footer text-center mt-5">
+        <p>جميع الحقوق محفوظة لشركة محمد المطرودي القابضة 2024 &copy; السجل التجاري: 1010820502 | الرقم الضريبي: 310219722800003</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>

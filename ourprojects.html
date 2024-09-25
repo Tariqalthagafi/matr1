@@ -13,7 +13,6 @@
         body {
             font-family: 'IBM Plex Sans Arabic', sans-serif;
             color: darkblue;
-            font-weight: bold;
         }
         .custom-nav .nav-link {
             color: darkblue;
@@ -36,15 +35,11 @@
             border-left: 2px solid darkblue; /* Dark blue vertical line */
             height: 100px;
         }
-        .footer {
-            background-color: #002147;
-            padding: 15px 0;
-            color: white;
-        }
-        .footer p {
-            margin: 0;
-            font-size: 14px;
-        }
+         /* Footer background color */
+      .footer {
+        background-color: darkblue;
+        color: white;
+      }
     </style>
 </head>
 <body>
@@ -68,15 +63,15 @@
 
     <!-- Our Project -->
     <div class="container text-center my-5" id="projects">
-        <h1 class="mb-4">مشاريعنا وانجازاتنا</h1>
+        <h1 class="mb-4" style="font-weight: bold;">مشاريعنا وانجازاتنا</h1>
         <div class="row justify-content-center align-items-center">
             <!-- Ongoing Projects -->
             <div class="col-md-3">
-                <p>أكثر من</p>
+                <p style="font-weight: bold;">أكثر من</p>
                 <div class="counter-display">
                     <span class="counter" data-target="3">0</span> <!-- Initialize at 0 -->
                 </div>
-                <p>مشاريع قائمة</p>
+                <p style="font-weight: bold;">مشاريع قائمة</p>
             </div>
 
             <!-- Vertical line -->
@@ -86,11 +81,11 @@
 
             <!-- Completed Projects -->
             <div class="col-md-3">
-                <p>أكثر من</p>
+                <p style="font-weight: bold;">أكثر من</p>
                 <div class="counter-display">
                     <span class="counter" data-target="40">0</span> <!-- Initialize at 0 -->
                 </div>
-                <p>مشروع مكتمل</p>
+                <p style="font-weight: bold;">مشروع مكتمل</p>
             </div>
 
             <!-- Vertical line -->
@@ -100,17 +95,17 @@
 
             <!-- Satisfied Customers -->
             <div class="col-md-3">
-                <p>أكثر من</p>
+                <p style="font-weight: bold;">أكثر من</p>
                 <div class="counter-display">
                     <span class="counter" data-target="100">0</span> <!-- Initialize at 0 -->
                 </div>
-                <p>عميل راض</p>
+                <p style="font-weight: bold;">عميل راض</p>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <div class="container-fluid bg-primary text-light footer text-center mt-5">
+    <div class="container-fluid footer text-center mt-5">
         <p>جميع الحقوق محفوظة لشركة محمد المطرودي القابضة 2024 &copy; السجل التجاري: 1010820502 | الرقم الضريبي: 310219722800003</p>
     </div>
 

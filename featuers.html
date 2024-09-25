@@ -31,16 +31,10 @@
         vertical-align: middle;
       }
 
-      /* Footer style */
-      .footer {
-        background-color: #002147;
-        padding: 15px 0;
+       /* Footer background color */
+       .footer {
+        background-color: darkblue;
         color: white;
-      }
-
-      .footer p {
-        margin: 0;
-        font-size: 14px;
       }
 
       /* Grid and card styles */
@@ -76,10 +70,12 @@
         transition: opacity 0.3s ease;
         overflow-y: auto;
         max-height: 100%;
+        color: darkblue;
       }
 
       .card-content h4 {
         margin-top: 0;
+        color: red;
       }
 
       .card.active .card-content {
@@ -120,7 +116,7 @@
 
     <!-- Features Section -->
     <div class="container text-center mt-5" id="features">
-      <h1>ما يميزنا</h1>
+      <h1 style="font-weight: bold;color: darkblue;">ما يميزنا</h1>
       <div class="card-container">
         <!-- Card 1 -->
         <div class="card" onclick="toggleContent(this)">
@@ -174,7 +170,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="container-fluid bg-primary text-light footer text-center mt-5">
+    <div class="container-fluid footer text-center mt-5">
       <p>جميع الحقوق محفوظة لشركة محمد المطرودي القابضة 2024 &copy; السجل التجاري: 1010820502 | الرقم الضريبي: 310219722800003</p>
     </div>
 

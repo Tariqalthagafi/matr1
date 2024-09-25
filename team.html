@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ar">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Arabic' rel='stylesheet'>
@@ -9,56 +9,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>شركة محمد المطرودي القابضة - فريقنا</title>
 
-
     <style>
-        /* Style for navigation only */
+        body {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+        }
+
         .custom-nav .nav-link {
-          color: darkblue;
-          font-weight: bold;
-          transition: color 0.3s ease;
+            color: darkblue;
+            font-weight: bold;
+            transition: color 0.3s ease;
         }
-    
+
         .custom-nav .nav-link:hover {
-          color: red;
+            color: red;
         }
-    
-        .custom-nav .nav-link img {
-          display: inline-block;
-          vertical-align: middle;
-        }
-      </style>
 
-    <!-- Team Section Styles -->
-    <style>
-      .team-item {
-        cursor: pointer;
-        position: relative;
-        border: none; /* Hide the card borders */
-      }
-      .team-item.selected::after {
-        content: '';
-        display: block;
-        width: 60%; /* Smaller than the card width */
-        height: 4px; /* Thicker underline */
-        background-color: red;
-        margin: 10px auto 0; /* Center the line under the card */
-        padding-top: 5px; /* Add some padding */
-      }
-      .team-details {
-        display: none;
-      }
-      .team-details.active {
-        display: block;
-      }
+        .team-item {
+            cursor: pointer;
+            position: relative;
+            border: none;
+            text-align: center;
+        }
+
+        .team-item img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .team-item.selected::after {
+            content: '';
+            display: block;
+            width: 60%;
+            height: 4px;
+            background-color: red;
+            margin: 10px auto 0;
+            padding-top: 5px;
+        }
+
+        .team-details {
+            display: none;
+        }
+
+        .team-details.active {
+            display: block;
+        }
+
+        h1, h3 {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        h6 {
+            color: red;
+            font-weight: bold;
+        }
+ /* Existing styles... */
+
+ .scroll-container {
+        display: flex; /* Ensure the cards are in a row */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
+    }
+
+    .scroll-container::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for WebKit browsers */
+    }
+        .footer {
+            background-color: darkblue;
+            color: white;
+        }
     </style>
+</head>
 
-  </head>
+<body>
 
-  <body>
-
-    <!-- Navigation -->
-    <div class="container">
-      <nav class="nav justify-content-center custom-nav">
+<!-- Navigation -->
+<div class="container">
+    <nav class="nav justify-content-center custom-nav">
         <a class="nav-link" href="address.html"><b>موقعنا</b></a>
         <a class="nav-link" href="chairman.html"><b>كلمة الرئيس</b></a>
         <a class="nav-link" href="about-us.html"><b>من نحن</b></a>
@@ -69,95 +97,92 @@
         <a class="nav-link" href="team.html"><b>فريقنا</b></a>
         <a class="nav-link" href="index.html"><b>الرئيسية</b></a>
         <a class="nav-link active" aria-current="page" href="#">
-          <img src="logom.png" alt="Logo" width="45" height="35">
+            <img src="logom.png" alt="Logo" width="45" height="35">
         </a>
-      </nav>
-    </div>
+    </nav>
+</div>
 
-    <!-- Team Section -->
-    <div class="container-xxl py-5" id="team">
-      <div class="container">
-        <div class="text-center">
+<!-- Team Section -->
+<div class="container-xxl py-5" id="team">
+  <div class="container">
+      <div class="text-center">
           <h1 class="mb-5">فريقنا</h1>
-        </div>
-        <div class="row g-4">
-          <!-- Card 1 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="team-item card selected" id="card1" onclick="selectCard('card1', 'member1')">
-              <img src="11.png" alt="Team Member" class="card-img-top">
-              <div class="team-text card-body"></div>
-            </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="team-item card" id="card2" onclick="selectCard('card2', 'member2')">
-              <img src="12.png" alt="Team Member" class="card-img-top">
-              <div class="team-text card-body"></div>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="team-item card" id="card3" onclick="selectCard('card3', 'member3')">
-              <img src="12.png" alt="Team Member" class="card-img-top">
-              <div class="team-text card-body"></div>
-            </div>
-          </div>
-          <!-- Card 4 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="team-item card" id="card4" onclick="selectCard('card4', 'member4')">
-              <img src="13.png" alt="Team Member" class="card-img-top">
-              <div class="team-text card-body"></div>
-            </div>
-          </div>
-        </div>
       </div>
+      <div class="scroll-container"> <!-- Added scroll-container -->
+          <div class="row g-4 flex-nowrap">
+              <!-- Card 1 -->
+              <div class="col-auto">
+                  <div class="team-item card selected" id="card1" onclick="selectCard('card1', 'member1')">
+                      <img src="11.png" alt="Team Member" class="card-img-top">
+                      <div class="team-text card-body"></div>
+                  </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-auto">
+                  <div class="team-item card" id="card2" onclick="selectCard('card2', 'member2')">
+                      <img src="12.png" alt="Team Member" class="card-img-top">
+                      <div class="team-text card-body"></div>
+                  </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-auto">
+                  <div class="team-item card" id="card3" onclick="selectCard('card3', 'member3')">
+                      <img src="12.png" alt="Team Member" class="card-img-top">
+                      <div class="team-text card-body"></div>
+                  </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-auto">
+                  <div class="team-item card" id="card4" onclick="selectCard('card4', 'member4')">
+                      <img src="13.png" alt="Team Member" class="card-img-top">
+                      <div class="team-text card-body"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
-      <!-- Content Section that appears when a card is clicked -->
-      <div class="container mt-5 text-center">
+    <!-- Content Section that appears when a card is clicked -->
+    <div class="container mt-5 text-center">
         <div id="member1" class="team-details active">
-          <h3>نائب رئيس مجلس الادارة والمدير التنفيذي</h3>
-          <p>محمد المطرودي</p>
+            <h3>نائب رئيس مجلس الادارة والمدير التنفيذي</h3>
+            <h6>محمد المطرودي</h6>
         </div>
         <div id="member2" class="team-details">
-          <h3>رئيس مجلس الادارة</h3>
-          <p>عبدالكريم المطرودي</p>
+            <h3>رئيس مجلس الادارة</h3>
+            <h6>عبدالكريم المطرودي</h6>
         </div>
         <div id="member3" class="team-details">
-          <h3>عضو مجلس ادارة ومدير موقع زرعة</h3>
-          <p>عفاف البدران</p>
+            <h3>عضو مجلس ادارة ومدير موقع زرعة</h3>
+            <h6>عفاف البدران</h6>
         </div>
         <div id="member4" class="team-details">
-          <h3>عضو مجلس ادارة ومدير التشغيل</h3>
-          <p>ابراهيم المطرودي</p>
+            <h3>عضو مجلس ادارة ومدير التشغيل</h3>
+            <h6>ابراهيم المطرودي</h6>
         </div>
-      </div>
     </div>
+</div>
 
-    <!-- Footer -->
-    <div class="container-fluid bg-primary text-light footer text-center mt-5">
-      <p>جميع الحقوق محفوظة لشركة محمد المطرودي القابضة 2024 &copy; السجل التجاري: 1010820502 | الرقم الضريبي: 310219722800003</p>
-    </div>
+<!-- Footer -->
+<div class="container-fluid footer text-center mt-5">
+    <p>جميع الحقوق محفوظة لشركة محمد المطرودي القابضة 2024 &copy; السجل التجاري: 1010820502 | الرقم الضريبي: 310219722800003</p>
+</div>
 
-    <!-- JavaScript for Card Selection -->
-    <script>
-      function selectCard(cardId, memberId) {
-        // Remove 'selected' class from all cards
+<!-- JavaScript for Card Selection -->
+<script>
+    function selectCard(cardId, memberId) {
         document.querySelectorAll('.team-item').forEach(function(card) {
-          card.classList.remove('selected');
+            card.classList.remove('selected');
         });
 
-        // Hide all member details
         document.querySelectorAll('.team-details').forEach(function(details) {
-          details.classList.remove('active');
+            details.classList.remove('active');
         });
 
-        // Add 'selected' class to the clicked card
         document.getElementById(cardId).classList.add('selected');
-
-        // Show the corresponding team member details
         document.getElementById(memberId).classList.add('active');
-      }
-    </script>
-    
-  </body>
+    }
+</script>
+
+</body>
 </html>
